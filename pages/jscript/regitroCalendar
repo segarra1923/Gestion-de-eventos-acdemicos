@@ -1,0 +1,24 @@
+function registrar(){
+    var combo = document.getElementById("sections");
+    var selected = combo.options[combo.selectedIndex].text;
+
+    db.collection("Eventos").add({
+        nombre: document.getElementById("nombre").value,
+        area: document.getElementById("area").value,
+        hora: document.getElementById("hora").value,
+        dia: document.getElementById("dia").value,
+        año: document.getElementById("fecha").value,
+        mes: document.getElementById("mes").value,
+        nivelEducativo: selected,
+        lugar: document.getElementById("lugar").value
+        
+    })
+    .then((docRef) => {
+        alert("Registro exitoso");
+        window.location.href = "eventos.html"
+    })
+    .catch((error) => {
+        alert("Error: " + error)
+    });
+    
+}

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 2 | Data Tables</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../../plugins/datatables/dataTables.bootstrap.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="../form1/css/main.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="../calendar.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>A</b>LT</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>Gestión de Eventos </b>Admin</span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Messages: style can be found in dropdown.less-->
+          
+          <!-- Notificalendariotions: style can be found in dropdown.less -->
+          
+          <!-- Tasks: style can be found in dropdown.less -->
+          
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="../../dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">Admin</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                <p>
+                  Gabriela Macas - Administrador 
+                  <small>2022-2023</small>
+                </p>
+              </li>
+              <!-- Menu Body -->
+              
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                
+                <a href="../examples/login.html" class="btn btn-default btn-flat">Salir</a>
+                
+              
+              </li>
+            </ul>
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+          
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>Admin</p>
+          <a href="#"><i class="fa fa-circle text-success"></i> </a>
+        </div>
+      </div>
+      <!-- search form -->
+      
+      </form>
+      <!-- /.search form -->
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu">
+        <li class="header">MENU DE NAVEGACION</li>
+        <li>
+          <a href="../calendar.html">
+            <i class="fa fa-calendar"></i> <span> Calendario de eventos</span>
+            <span class="pull-right-container">
+              <small class="label pull-right bg-red"></small>
+              <small class="label pull-right bg-blue"></small>
+            </span>
+          </a>
+        </li>
+        <li class="treeview active">
+          <a href="#">
+            <i class="fa fa-table"></i> <span> Registro de asistencia</span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+          </a>
+
+        </li>
+        <li class="treeview">
+          <a href="../../index.html">
+            <i class="fa fa-dashboard"></i> <span>Eventos realizados</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+        </li>
+        
+        
+        
+       
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Regitro de asistencia a eventos académicos
+      </h1>
+      <!--<ol class="breadcrumb">
+        <li><a href="pages/calendar.html"><i class="fa fa-dashboard"></i> Inicio</a></li>
+      </ol>-->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      
+      <div class="row-index">
+        <div class="col-xs-12">
+                  
+          <div class="box">
+            <div class="box-header">
+              <!--<h3 class="box-title">Lista de asistentes</h3>-->
+              <a class=" boton btn btn-primary"  role="button" style="font-size: 16px; margin-top: 10px; margin-bottom: 10px; margin-left: 420px;" href="../formularios/asitencia.html">Llenar registro</a>
+
+
+               <div class="col-xs-12">
+
+
+              
+                
+            </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <table id="example1" class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                  <th>Indetifición </th>
+                  <th>Nombres</th>
+                  <th>Apellidos</th>
+                  <th>Tipo asistentes </th>
+                  <th>Curso</th>
+                  <th>Nombre y apellido del represemtante</th>
+                  <th>Nombre del evento</th>
+                  <th>Fecha </th>
+                </tr>
+                </thead>
+                <tbody>
+                
+                <tr>
+                  <td>1106005356</td>
+                  <td>ANDREA NAYELY</td>
+                  <td>ABAD RUILOVA</td>
+                  <td> Estudiante</td>
+                  <td>4</td>
+                  <td>NICOL RUILOVA</td>
+                  <td>NOTAS QUIMESTRALES</td>
+                  <td>26/01/2023</td>
+                </tr>
+                <tr>
+                  <td>1105562472</td>
+                  <td>JENNY ROCIO </td>
+                  <td>ARMIJOS PEREIRA</td>
+                  <td> Estudiante</td>
+                  <td>4</td>
+                  <td>PAUL ARMIJOS</td>
+                  <td>SESION DE PADRES DE REPRESANTES</td>
+                  <td>26/01/2023</td>
+                </tr>
+                <tr>
+                  <td>1150210373</td>
+                  <td>MIRIAN ANDREA</td>
+                  <td>ASTIMBAY FAJARDO</td>
+                  <td> Estudiante</td>
+                  <td>6</td>
+                  <td>ANDREA FAJARDO</td>
+                  <td>REACUPERACION DE LECCION</td>
+                  <td>26/01/2023</td>
+                </tr>
+                <tr>
+                  <td>11505602637</td>
+                  <td>LESTER MICHAEL</td>
+                  <td>AUCAPIÑA GUERRERO</td>
+                  <td> Estudiante</td>
+                  <td>4</td>
+                  <td>MILTON AUCAPIÑA</td>
+                  <td>TAREAS ATRASADAS</td>
+                  <td>26/01/2023</td>
+                </tr>
+                <tr>
+                  <td>1150282638</td>
+                  <td>JONATHAN ROLANDO </td>
+                  <td>CABRERA CANGO</td>
+                  <td> Estudiante</td>
+                  <td>5</td>
+                  <td>CECILIA CANGO</td>
+                  <td>BAJO RENDIMIENTO</td>
+                  <td>26/01/2023</td>
+                </tr>
+                <tr>
+                  <td>1150282638</td>
+                  <td>JONATHAN ROLANDO </td>
+                  <td>CABRERA CANGO</td>
+                  <td>Docente</td>
+                  <td>9</td>
+                  <td>No aplica</td>
+                  <td>Taller de Campaña de prevención "Pirotecnia"</td>
+                  <td>16/12/2022</td>
+                </tr>
+                
+                
+                </tfoot>
+              </table>
+             
+            </div>
+            <!-- /.box-body -->
+            
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="pull-right hidden-xs">
+      <b></b> 
+    </div>
+    <strong> <a href="https://www.facebook.com/santamarianitaloja/?locale=es_LA" target="_blank">Unidad Educativa Particular "Santa Mariana de Jesús"</a></strong> 
+  
+  </footer>
+
+  <!-- Control Sidebar -->
+ 
+  <!-- /.control-sidebar -->
+  <!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+  
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+<script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script
+<!-- Bootstrap 3.3.6 -->
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<!-- DataTables -->
+<script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../../plugins/datatables/dataTables.bootstrap.min.js"></script>
+<!-- SlimScroll -->
+<script src="../../plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../../plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/app.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+<!-- page script -->
+<script>
+  $(function () {
+    $("#example1").DataTable();
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false
+    });
+  });
+</script>
+</body>
+</html>

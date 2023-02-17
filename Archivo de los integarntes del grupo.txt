@@ -1,0 +1,9 @@
+Integrantes del grupo Desarrollador de la Gestión de Eventos Académicos:
+
+-Kerly Díaz.
+-Juana Quichimbo.
+-Carmen Salinas.
+-Gabriela Segarra.
+
+Descrpicoón General:
+Esta sistema permitirá a todo la comunidad educativa (personal administrativo, docentes, padres de familia y estudiantes) de una manera más ágil, veraz y en tiempo real acceder a su portal para poder revisar los eventos académicos y por medio de un calendario ponerse al tanto de los eventos próximas a presentarse la Institución Educativa; así como la generación de reporte de notas o rendimiento académico.
